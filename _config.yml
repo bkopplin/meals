@@ -44,12 +44,10 @@ plugins:
 collections:
   recipes:
     output: true
-    layout: recipes
 
 defaults:
-  -
-    scope:
-      path: "_recipes"
-      type: ""
+  - scope:
+      path: ""
+      type: "recipes"
     values:
       layout: "recipes"

@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
-Recipes layout
-<h2>{{page.title}}</h2>
-{{ page.content | markdownify}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>{{page.title}}</h2>
+            {%if page.image %}<img src="../{{page.image}}" alt="image of {{page.title}}" class="image-fluid" style="width: 100%">{%endif%}
+        </div>
+        <div class="col-lg-6">
+            {%if page.ingredients%}
+            <h2>Ingredients</h2>
+            <ul>
+                {%for node in page.ingredients%}
+                <li>{{node}}</li>
+                {%endfor%}
+            </ul>
+
+            {%endif%}
+        </div>
+    </div>
+
+</div>
+
+{{ page.content | markdownify }}
