@@ -1,4 +1,4 @@
 ---
 title: "Wrap"
-image: "../../images/wrap.jpg"
+image: "images/wrap.jpg"
 ---

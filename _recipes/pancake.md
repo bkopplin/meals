@@ -1,4 +1,4 @@
 ---
 title: "Pancake"
-image: "../../images/pancake.jpg"
+image: "images/pancake.jpg"
 ---
