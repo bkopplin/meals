@@ -1,0 +1,25 @@
+---
+layout: default
+title: "recipes"
+---
+<div class="container pt-3">
+  <div class="row"></div>
+<div class="card-columns">
+    {% for recipe in site.recipes %}
+    
+        <div class="card overlay ">
+          <a href="{{recipe.url}}">
+           {% if recipe.image %} <img class="card-img-top" src="{{recipe.image}}" alt="">{% endif %}
+          <div class="overlay-body box-over-card bg-dark pl-2 pt-2">
+            <p class="text-light">{{recipe.title}}</p>
+          </div>
+          <!-- <div class="card-body">
+            <h5 class="card-title"><p>{{recipe.title}}</p></h5>
+          </div> -->
+        </a>
+        </div>
+      
+        {%endfor%}
+    </div>
+</div>
+
