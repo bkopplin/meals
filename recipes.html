@@ -8,7 +8,7 @@ title: "recipes"
     {% for recipe in site.recipes %}
     
         <div class="card overlay ">
-          <a href="{{recipe.url}}">
+          <a href="./{{recipe.url}}">
            {% if recipe.image %} <img class="card-img-top" src="{{recipe.image}}" alt="">{% endif %}
           <div class="overlay-body box-over-card bg-dark pl-2 pt-2">
             <p class="text-light">{{recipe.title}}</p>
