@@ -1,13 +1,13 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">Bjarnes recipes</a>
+    <a class="navbar-brand" href="{{site.url}}">{{site.title}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
         {% for item in site.data.navigation%}
         <li class="nav-item">
           <a class="nav-link" href="{{item.link}}">{{item.name}}</a>
@@ -18,5 +18,6 @@
     </div>
   </div>
   </nav>
+  <hr>
 
 
